@@ -32,7 +32,7 @@ app.get('/webhook', (request, response) => {
         // Return appropriate response to Hasura
         var hasuraVariables = {
             'X-Hasura-Role': 'user',  // result.role
-            'X-Hasura-User-Id': '1'    // result.user_id
+            'X-Hasura-User-Id': '4'    // result.user_id
         };
         response.json(hasuraVariables);
     });
